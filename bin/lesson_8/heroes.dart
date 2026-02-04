@@ -73,7 +73,9 @@ class Ludoman extends Hero {
       @override
   void applySuperPower(Boss boss, List<Hero> heroes) {
     int gambleResult1 = RpgGame.random.nextInt(6)+1;
+    print ('Ludoman $name gambled and got $gambleResult1');
     int gambleResult2 = RpgGame.random.nextInt(6)+1;
+    print ('Ludoman $name gambled and got $gambleResult2');
     if (gambleResult1 == gambleResult2) {
       int extraDamage = gambleResult2*gambleResult1;
       boss.health -= extraDamage;}
